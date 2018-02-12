@@ -1,0 +1,129 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context="taxi.eskar.eskartaxi.ui.order.progress.driver.OrderProgressDriverFragment">
+
+    <TextView
+        android:id="@+id/tv_header_order_details_driver_passenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_header_odrder_details_passenger"
+        android:theme="@style/AppTheme.TextView.Header" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_order_details_driver_passenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_account_orange" />
+
+        <TextView
+            android:id="@+id/tv_passenger_name_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/tv_order_details_driver_passenger_name_first"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_avatar"
+            app:layout_constraintTop_toTopOf="@id/iv_avatar" />
+
+        <TextView
+            android:id="@+id/tv_passenger_name_last"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_order_details_driver_passenger_name_last"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/tv_passenger_name_first"
+            app:layout_constraintStart_toStartOf="@id/tv_passenger_name_first"
+            app:layout_constraintTop_toBottomOf="@id/tv_passenger_name_first" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_passenger_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_order_details_driver_passenger_empty"
+            android:textAlignment="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btn_passenger_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_order_details_driver_passenger_call"
+        android:theme="@style/AppTheme.TextView.Clickable.Button" />
+
+    <include layout="@layout/layout_order_details_route" />
+
+    <TextView
+        android:id="@+id/tv_header_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_header_order_details_action"
+        android:theme="@style/AppTheme.TextView.Header" />
+
+    <TextView
+        android:id="@+id/btn_action_start_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_order_details_driver_start_waiting"
+        android:theme="@style/AppTheme.TextView.Clickable.Button.Inversed"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_action_start_driving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_order_details_driver_start_diving"
+        android:theme="@style/AppTheme.TextView.Clickable.Button.Inversed"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_action_finish_driving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_order_details_driver_finish_driving"
+        android:theme="@style/AppTheme.TextView.Clickable.Button.Inversed"
+        android:visibility="gone" />
+
+</LinearLayout>

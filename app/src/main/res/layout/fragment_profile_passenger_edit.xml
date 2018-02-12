@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layout_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_header_profile_edit_name_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_header_profile_edit_name_first"
+                android:theme="@style/AppTheme.TextView.Header"/>
+
+            <EditText
+                android:id="@+id/et_profile_edit_name_first"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_profile_edit_name_first_hint"
+                android:inputType="textPersonName|textCapWords"/>
+
+            <TextView
+                android:id="@+id/tv_header_profile_edit_name_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_header_profile_edit_name_last"
+                android:theme="@style/AppTheme.TextView.Header"/>
+
+            <EditText
+                android:id="@+id/et_profile_edit_name_last"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_profile_edit_name_last_hint"
+                android:inputType="textPersonName|textCapWords"/>
+
+            <TextView
+                android:id="@+id/tv_header_profile_edit_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_header_profile_edit_gender"
+                android:theme="@style/AppTheme.TextView.Header"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/btn_profile_edit_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_profile_edit_save"
+                android:theme="@style/AppTheme.TextView.Clickable.Button"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

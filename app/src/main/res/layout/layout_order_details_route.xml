@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Order route info -->
+    <TextView
+        android:id="@+id/tv_order_details_driver_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/ic_map_marker_from_red"
+        android:text="@string/tv_order_details_driver_from"
+        android:theme="@style/AppTheme.TextView.Clickable.Item" />
+
+    <TextView
+        android:id="@+id/tv_order_details_driver_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/ic_map_marker_to_blue"
+        android:text="@string/tv_order_details_driver_to"
+        android:theme="@style/AppTheme.TextView.Clickable.Item" />
+
+    <TextView
+        android:id="@+id/btn_order_details_driver_build_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_order_details_driver_on_map"
+        android:theme="@style/AppTheme.TextView.Clickable.Button.Inversed" />
+    <!---->
+
+</merge>

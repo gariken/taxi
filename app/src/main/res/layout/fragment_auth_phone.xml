@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:contentDescription="@null"
+        android:src="@drawable/logo_eskar"
+        app:layout_constraintBottom_toTopOf="@+id/et_auth_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_auth_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="@string/hint_auth_phone"
+        android:inputType="phone"
+        android:textColorHighlight="@color/orange"
+        app:layout_constraintBottom_toTopOf="@id/btn_auth_phone_next_passenger"/>
+
+    <Button
+        android:id="@+id/btn_auth_phone_next_passenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/btn_auth_to_verification"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toTopOf="@id/btn_auth_phone_next_driver"/>
+
+    <Button
+        android:id="@+id/btn_auth_phone_next_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/btn_auth_to_verification_driver"
+        android:theme="@style/AppTheme.Button.Borderless"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

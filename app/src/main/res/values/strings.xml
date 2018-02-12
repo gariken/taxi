@@ -1,0 +1,295 @@
+<resources>
+
+    <!-- Global:Errors -->
+    <string name="error_auth">Произошла ошибка при авторизации.\nНеобходимо произвести повторную авторизацию.</string>
+    <string name="error_banned">Ваш аккаунт заблокирован.\nСвяжитесь с диспетчерской или войдите с помощью другого номера.</string>
+    <string name="error_io">Не удалось соединитьяся с сервером.\nПроверьте подключение и повторите.</string>
+    <string name="error_location">Недоступно ваше местоположение.\nПроверьте настройки и повторите.</string>
+    <string name="error_unconfirmed">Вас пока не допустили к работе.</string>
+    <string name="error_unbinding">Ошибка при удалении карты</string>
+    <string name="error_debt_closing_no_debts">Все задолженности погашены.</string>
+    <string name="error_card_not_found">Не найдена указанная карта</string>
+    <string name="error_orders_not_found">У вас нет ни одной поездки</string>
+    <string name="error_payment_not_found">Не найдена информация о платеже</string>
+    <string name="error_no_money">Недостаточно средств</string>
+    <string name="error_unknown">Произошла ошибка! (Код: %d)</string>
+    <string name="error_order_creating">Произошла ошибка при создании заказа (%d)</string>
+    <string name="error_binding">Произошла ошибка при привязке карты</string>
+    <string name="error_cards_loading">Произошла ошибка при загрузке карт.</string>
+    <string name="error_debt_closing">Ошибка при закрытии задолженности.</string>
+    <string name="error_debt_closing_code">Ошибка при закрытии задолженности. (%d)</string>
+    <string name="error_debt_loading">Ошибка при загрузке задолженности</string>
+
+    <!-- Global:Masks -->
+    <string name="mask_balance">Баланс: %1$.2f ₽</string>
+    <string name="mask_card">Карта %s</string>
+    <string name="mask_distance">%1$.2f КМ</string>
+    <string name="mask_price">%d₽</string>
+    <string name="mask_price_add">+%d₽</string>
+    <string name="mask_price_empty">%s ₽</string>
+    <string name="mask_rating">Рейтинг: %1$.2f</string>
+
+    <!-- Global:Messages -->
+    <string name="message_card_binding_success">Карта успешно добавлена!</string>
+
+    <!-- Auth -->
+    <string name="hint_auth_phone">Введите ваш номер</string>
+    <string name="btn_auth_to_verification">Продолжить</string>
+
+    <!-- MapMain -->
+    <string name="text_start_passenger_where_to">Куда едем?</string>
+
+    <!-- Address Typing -->
+    <string name="btn_address_typing_favorited">Избранные адреса</string>
+    <string name="btn_address_typing_select_on_map">Выбрать адрес на карте</string>
+    <string name="text_suggestions_empty">Соответствий не найдено</string>
+
+    <!-- PassengerProfile -->
+    <string name="title_profile_passenger">Ваш профиль</string>
+    <string name="tv_header_profile_info">Информация</string>
+    <string name="tv_header_settings">Настройки</string>
+    <string name="tv_profile_rating">Рейтинг: %1$.2f</string>
+    <string name="btn_profile_edit">Редактировать</string>
+    <string name="tv_profile_cards">Банковские карты</string>
+    <string name="tv_profile_favorited_addresses">Избранные адреса</string>
+    <string name="tv_profile_rides_history">История поездок</string>
+    <string name="btn_profile_sign_out">Выйти из аккаунта</string>
+    <string name="title_address_typing">Ввод адреса</string>
+    <string name="title_order_details">Заказ</string>
+    <string name="title_address_selecting">Выберите точку на карте</string>
+    <string name="btn_address_selecting_select">Выбрать точку</string>
+    <string name="title_favorited_addresses">Избранные адреса</string>
+    <string name="et_address_typing_address_hint">Город, улица, дом</string>
+    <string name="tv_header_favorited_home">Домашний адрес</string>
+    <string name="btn_favorited_home">Нажмите, чтобы добавить домашний адрес</string>
+    <string name="tv_header_favorited_work">Рабочий адрес</string>
+    <string name="btn_favorited_work">Нажмите, чтобы добавить рабочий адрес</string>
+    <string name="tv_header_favorited_other">Остальные адреса</string>
+    <string name="btn_favorited_add_new">Добавить адрес</string>
+
+    <!-- PaymentTypes  -->
+    <string name="title_payment_type">Способы оплаты</string>
+    <string name="btn_payment_type_add_new">Добавить карту</string>
+    <string name="message_payment_type_change_in_process">Меняем способ оплаты, подождите</string>
+
+    <!-- ProfileEdit -->
+    <string name="title_profile_edit">Редактировать</string>
+    <string name="tv_header_profile_edit_name_last">Ваша фамилия</string>
+    <string name="et_profile_edit_name_last_hint">Введите вашу фамилию</string>
+    <string name="tv_header_profile_edit_name_first">Ваше имя</string>
+    <string name="et_profile_edit_name_first_hint">Введите ваше имя</string>
+    <string name="tv_header_profile_edit_gender">Ваш пол</string>
+    <string name="btn_profile_edit_save">Cохранить</string>
+    <string name="title_order_history">История заказов</string>
+    <string name="btn_order_setup_confirm">Вызвать</string>
+    <string name="hint_auth_code">Введите код из СМС</string>
+    <string name="btn_auth_to_verification_driver">Продолжить как водитель</string>
+    <string name="tv_auth_code_hint">На номер %s отправлен код</string>
+    <string name="tv_header_reg_passanger_name_first">Ваше имя</string>
+    <string name="et_reg_passenger_last_hint">Введите вашу фамилию</string>
+    <string name="et_reg_passenger_first_hint">Введите ваше имя</string>
+    <string name="tv_header_reg_passenger_gender">Укажите ваш пол</string>
+    <string name="btn_reg_passenger_save">Сохранить и продолжить</string>
+    <string name="title_reg_passenger">Регистрация пассажира</string>
+    <string name="btn_reg_passenger_upload_photo">Загрузить фотографию</string>
+    <string name="tv_header_reg_passenger_upload_photo">Загрузите свою фотографию (необязательно)</string>
+    <string name="tv_header_reg_passanger_name_last">Ваша фамилия</string>
+    <string name="tv_header_reg_driver_name_first">Ваше имя</string>
+    <string name="et_reg_driver_first_hint">Введите ваше имя</string>
+    <string name="tv_header_reg_driver_name_last">Ваша фамилия</string>
+    <string name="et_reg_driver_last_hint">Введите вашу фамилию</string>
+    <string name="tv_header_reg_driver_gender">Укажите ваш пол</string>
+    <string name="tv_header_reg_driver_upload_photo">Загрузите свою фотографию</string>
+    <string name="btn_reg_driver_upload_photo">Загрузить фотографию</string>
+    <string name="btn_reg_driver_save">Сохранить и продолжить</string>
+    <string name="btn_reg_driver_upload_license">Загрузите удостоверение</string>
+    <string name="tv_header_reg_driver_upload_license">Загрузите ваше водительское удостоверение</string>
+    <string name="title_reg_driver">Регистрация водителя</string>
+    <string name="et_reg_driver_car_model">Ford Focus</string>
+    <string name="tv_header_reg_driver_car_model">Укажите модель вашего автомобиля</string>
+    <string name="tv_header_reg_driver_car_license_plate">Укажите номер вашего автомобиля</string>
+    <string name="et_reg_driver_car_license_plate">А000АА06</string>
+    <string name="title_profile_driver">Ваш профиль</string>
+    <string name="tv_header_profile_edit_driver_car_model">Укажите модель вашего автомобиля</string>
+    <string name="et_profile_edit_driver_car_model">Ford Focus</string>
+    <string name="tv_header_profile_edit_driver_car_license_plate">Укажите номер вашего автомобиля</string>
+    <string name="et_profile_edit_driver_car_license_plate">А000АА00</string>
+    <string name="text_driver_orders_empty">Нет доступных для выбора поездок.</string>
+    <string name="btn_start_driver_orders_empty_reload">Обновить</string>
+    <string name="title_start_driver">Заказы</string>
+    <string name="title_order_details_driver">О заказе</string>
+    <string name="tv_header_odrder_details_address_from">Точка отправления</string>
+    <string name="tv_header_odrder_details_address_to">Точка прибытия</string>
+    <string name="tv_header_odrder_details_passenger">О пассажире</string>
+    <string name="btn_order_details_driver_passenger_call">Позвонить</string>
+    <string name="tv_order_details_driver_passenger_name_first">Нет данных</string>
+    <string name="tv_order_details_driver_passenger_name_last">Нет данных</string>
+    <string name="tv_order_details_driver_passenger_empty">Не удалось получить данные пассажира.</string>
+    <string name="tv_order_details_driver_from">Нет данных</string>
+    <string name="tv_order_details_driver_to">Нет данных</string>
+    <string name="btn_order_details_driver_confirm">Взять заказ</string>
+    <string name="tv_header_odrder_details_price">Стоимость заказа</string>
+    <string name="tv_order_details_driver_price">Нет данных</string>
+    <string name="tv_order_details_driver_price_mask">%d₽</string>
+    <string name="tv_order_details_driver_distance">Нет данных</string>
+    <string name="tv_order_details_driver_distance_mask">%1$.2fкм</string>
+    <string name="tv_header_odrder_details_distance">Длина маршрута</string>
+    <string name="text_order_history_passenger_empty_orders">Вы пока не соврешили ни одной поездки</string>
+    <string name="text_order_history_passenger_error">Во время загрузки истории произошла ошибка</string>
+    <string name="text_order_history_passenger_error_reload">Перезагрузить</string>
+    <string name="text_address_select_select">Выбрать точку</string>
+    <string name="text_order_setup_from">Точка отправления</string>
+    <string name="text_order_setup_to">Точка прибытия</string>
+    <string name="btn_order_setup_add_comments">Добавить пожелания</string>
+    <string name="tv_header_order_comments_options">Опции</string>
+    <string name="tv_order_comments_options_animals">С животным</string>
+    <string name="tv_order_comments_options_child">С детским креслом</string>
+    <string name="tv_header_order_comments_comment">Комментарий</string>
+    <string name="et_order_comments_comment_hint">Введите ваш комментарий</string>
+    <string name="btn_order_comments_save">Сохранить</string>
+    <string name="title_order_comments">Комментарии</string>
+    <string name="text_order_progress_passenger_search_for_driver">Пожалуйста, подождите.\nМы ищем водителя.</string>
+    <string name="text_order_progress_passenger_cancel_order">Отменить</string>
+    <string name="text_order_progress_passenger_in_progress">Вы в пути</string>
+    <string name="text_order_progress_passenger_driver_found">Водитель откликнулся.\nОжидайте в точке отправления.</string>
+    <string name="text_order_progress_passenger_arrived">Водитель на месте.</string>
+    <string name="tv_header_order_details_action">Следующее действие</string>
+    <string name="btn_order_details_driver_start_waiting">Начать ожидание</string>
+    <string name="btn_order_details_driver_start_diving">Начать поездку</string>
+    <string name="btn_order_details_driver_finish_driving">Завершить поездку</string>
+    <string name="title_dialog_order_closed">Вы закончили поездку</string>
+    <string name="message_dialog_order_closed">Вы успешно завершили поездку и будете перенапралены на главный экран.</string>
+    <string name="text_order_progress_rating">Вы можете оценить поездку</string>
+    <string name="btn_in_progress_rating_post">Отправить</string>
+    <string name="text_order_progress_passenger_ended">Поездка окончена.</string>
+    <string name="title_profile_passenger_dialog">Удалить фото</string>
+    <string name="message_dialog_profile_passenger">У вас уже установлена фотография. Вы хотите ее удалить?</string>
+    <string name="pos_btn_dialog_profile_passenger_delete">Удалить</string>
+    <string name="neu_btn_dialog_profile_passenger_replace">Заменить</string>
+    <string name="btn_ended_cancel">На главную</string>
+    <string name="tv_header_odrder_details_passenger_driver">О водителе</string>
+    <string name="tv_order_details_passenger_driver_empty">Не удалось получить данные о водителе.</string>
+    <string name="btn_order_details_driver_repeat">Повторить</string>
+    <string name="tv_order_details_passenger_from">Нет данных</string>
+    <string name="tv_order_details_passenger_to">Нет данных</string>
+    <string name="tv_order_details_passenger_price">Нет данных</string>
+    <string name="tv_order_details_passenger_distance">Нет данных</string>
+    <string name="tv_order_details_passenger_driver_name_first">Имя водителя</string>
+    <string name="tv_order_details_passenger_driver_name_last">Фамилия водителя</string>
+    <string name="btn_order_details_passenger_repeat">Повторить</string>
+    <string name="title_chooser">Выберите изображение</string>
+    <string name="action_title_reload">Обновить</string>
+
+    <!-- Fav Addresses -->
+    <string name="msg_fav_addresses_no_home">Нажмите, чтобы добавить домашний адрес</string>
+    <string name="msg_fav_addresses_no_work">Нажмите, чтобы добавить рабочий адрес</string>
+
+    <!-- Fav Addresses - Read Only Dialog -->
+    <string name="dialog_fav_addresses_read_mode_only_msg">Нельзя добавлять адреса в режиме выбора. Вы можете добавить адрес в меню "Профиль" - "Избранные адреса".</string>
+    <string name="dialog_fav_addresses_read_mode_only_pos_btn">Хорошо</string>
+
+    <!-- Fav Addresses - Delete Other Dialog -->
+    <string name="dialog_fav_addresses_delete_other_msg">Удалить адрес?</string>
+    <string name="dialog_fav_addresses_delete_other_pos_btn">Удалить</string>
+    <string name="dialog_fav_addresses_delete_other_neg_btn">Отмена</string>
+
+    <!-- Fav Addresses - Delete Home Dialog -->
+    <string name="dialog_fav_addresses_delete_home_msg">Удалить домашний адрес?</string>
+    <string name="dialog_fav_addresses_delete_home_pos_btn">Удалить</string>
+    <string name="dialog_fav_addresses_delete_home_neg_btn">Отмена</string>
+
+    <!-- Fav Addresses - Delete Work Dialog -->
+    <string name="dialog_fav_addresses_delete_work_msg">Удалить рабочий адрес?</string>
+    <string name="dialog_fav_addresses_delete_work_pos_btn">Удалить</string>
+    <string name="dialog_fav_addresses_delete_work_neg_btn">Отмена</string>
+
+    <!-- Address Typing - No Favs From Favs Dialog -->
+    <string name="dialog_addresses_typing_no_favs_from_favs_msg">Нельзя добавлять избранный адрес из избранных адресов.</string>
+    <string name="dialog_addresses_typing_no_favs_from_favs_btn">Хорошо</string>
+
+    <!-- Order Progress Passenger - Cancel Order -->
+    <string name="dialog_order_progress_passenger_cancel_msg">Отменить заказ?</string>
+    <string name="dialog_order_progress_passenger_cancel_pos_btn">Да</string>
+    <string name="dialog_order_progress_passenger_cancel_neg_btn">Нет</string>
+
+    <!---->
+    <string name="neg_btn_dialog_profile_passenger_delete">Отмена</string>
+    <string name="neg_btn_dialog_profile_driver_delete">Отмена</string>
+    <string name="dialog_progress_msg">Подождите, загрузка данных…</string>
+    <string name="btn_search_driver_cancel">Отмена</string>
+    <string name="text_order_options_empty">Нет доступных опций.</string>
+    <string name="text_order_option_empty">---</string>
+    <string name="btn_order_details_driver_on_map">Построить маршрут</string>
+    <string name="tv_header_odrder_details_comments">Комментарии</string>
+    <string name="tv_order_details_driver_comments">Нет комментариев</string>
+    <string name="text_no_data">Нет данных</string>
+    <string name="dialog_comments_title">Комментарии и пожелания</string>
+    <string name="dialog_comments_pos">Понятно</string>
+    <string name="tv_profile_share">Рассказать друзьям</string>
+    <string name="share">Попробуй такси Eskar: https://play.google.com/store/apps/details?id=taxi.eskar.eskartaxi</string>
+    <string name="action_title_sign_out">Выйти</string>
+    <string name="text_fav_addresses_empty">Нет избранных адресов</string>
+    <string name="tv_header_reg_driver_car_color">Укажите цвет автомобиля</string>
+    <string name="et_reg_driver_car_color">Черный</string>
+    <string name="tv_header_profile_edit_driver_car_color">Укажите цвет вашего автомобиля</string>
+    <string name="et_profile_edit_driver_car_color">Черный</string>
+    <string name="tv_order_option_price_empty" />
+
+    <!-- CropActivity -->
+    <string name="crop_image_menu_crop">Продолжить</string>
+    <string name="crop_image_menu_flip">Отразить</string>
+    <string name="crop_image_menu_flip_horizontally">Отразить по горизонтали</string>
+    <string name="crop_image_menu_flip_vertically">Отразить по вертикали</string>
+    <string name="crop_image_menu_rotate_right">Повернуть</string>
+    <string name="btn_splash_sign_out">Выйти</string>
+    <string name="btn_splash_retry">Повторить</string>
+    <string name="btn_reload">Обновить</string>
+
+    <string name="hint_review">Оставьте отзыв</string>
+
+    <string name="btn_location_settings">В настройки</string>
+
+    <string name="title_order_close">Оплата</string>
+    <string name="header_summary_price">К оплате</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="text_ok">Ок</string>
+
+    <!-- CardBinding -->
+    <string name="title_card_binding">Ввод данных</string>
+    <string name="header_card_num">Номер карты</string>
+    <string name="header_card_exp">Действует до</string>
+    <string name="header_card_cvv">CVV</string>
+    <string name="header_card_own">Владелец (как на карте)</string>
+    <string name="hint_card_own">IVAN IVANOV</string>
+    <string name="title_three_d_secure">Подтверждение</string>
+
+    <!-- Cards -->
+    <string name="title_cards">Карты</string>
+    <string name="message_card_unbinding">Отвязать карту?</string>
+    <string name="pos_btn_card_unbinding">Отвязать</string>
+    <string name="neg_btn_card_unbinding">Отмена</string>
+    <string name="text_empty_cards">У вас ни одной карты</string>
+    <string name="btn_add_card">Добавить карту</string>
+    <string name="error_binding_data">Ошибка данных, проверьте!</string>
+    <string name="btn_change_payment_type">Способ оплаты</string>
+    <string name="text_payment_type">СПОСОБ ОПЛАТЫ\n%s</string>
+    <string name="payment_type_cash">Наличные</string>
+    <string name="pos_btn_default">Понятно</string>
+    <string name="tv_profile_debts">Задолженности</string>
+    <string name="title_debts">Задолженность</string>
+    <string name="text_debt_empty">У вас нет задолженности.\nСпасибо!</string>
+    <string name="header_cards">Выберите карту, с помощью которой хотите погасить задолженность</string>
+    <string name="header_debts">Сумма к погашению</string>
+    <string name="mask_payment_type_card">Карта %s</string>
+    <string name="message_debt_closing_success">Задолженность погашена. Спасибо, что вы с нами!</string>
+
+    <string name="payment_method_cash">Наличный расчет</string>
+    <string name="payment_method_cashless">Безналичный расчет</string>
+    <string name="payment_method_unknown">Ошибка расчета</string>
+    <string name="btn_payment_pos">Деньги получены</string>
+    <string name="btn_payment_neg">Отказ в оплате</string>
+    <string name="error_order_closing">Ошибка при закрытии заказа</string>
+    <string name="header_payment_method">Способ оплаты</string>
+    <string name="error_has_debt">У вас есть задолженность. Вы можете погасить ее в разделе \"Задолженности\" в профиле.</string>
+
+</resources>

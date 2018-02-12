@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias this.getProperty("taxi.eskar.signing.keyalias")
+            keyPassword this.getProperty("taxi.eskar.signing.keypassword")
+            storeFile file(this.getProperty("taxi.eskar.signing.storepath"))
+            storePassword this.getProperty("taxi.eskar.signing.storepassword")
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "taxi.eskar.eskartaxi"
+
+        buildConfigField "String", "DADATA_API_KEY", this.getProperty("ru.dadata.apikey")
+        buildConfigField "String", "DADATA_URL_SUGGESTIONS", this.getProperty("ru.dadata.url.suggestions")
+        buildConfigField "String", "ESKAR_DOMAIN", this.getProperty("taxi.eskar.domain.debug")
+        buildConfigField "String", "MAPBOX_API_KEY", this.getProperty("com.mapbox.apikey")
+        buildConfigField "String", "YANDEX_API_KEY", this.getProperty("ru.yandex.apikey")
+        buildConfigField "String", "YANDEX_URL_GEOCODER", this.getProperty("ru.yandex.url.geocoder")
+        buildConfigField "String", "YANDEX_URL_MARKET", this.getProperty("ru.yandex.url.market")
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [toothpick_registry_package_name: 'taxi.eskar.eskartaxi']
+            }
+        }
+        minSdkVersion 19
+        multiDexEnabled true
+        targetSdkVersion 27
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionCode 920
+        versionName "0.9.20"
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            buildConfigField "String", "CLOUDPAYMENTS_PUBLIC_ID", this.getProperty("ru.cloudpayments.publicid.debug")
+            buildConfigField "String", "ESKAR_DOMAIN", this.getProperty("taxi.eskar.domain.debug")
+            minifyEnabled false
+            versionNameSuffix "-DEBUG"
+        }
+        debugDriver {
+            initWith debug
+            applicationIdSuffix ".debug.driver"
+            versionNameSuffix "-DEBUG-DRIVER"
+        }
+        debugPassenger {
+            initWith debug
+            applicationIdSuffix ".debug.passenger"
+            versionNameSuffix "-DEBUG-PASSENGER"
+        }
+        release {
+            buildConfigField "String", "CLOUDPAYMENTS_PUBLIC_ID", this.getProperty("ru.cloudpayments.publicid.release")
+            buildConfigField "String", "ESKAR_DOMAIN", this.getProperty("taxi.eskar.domain.release")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        beta {
+            initWith release
+            versionNameSuffix "-BETA"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '27.0.1'
+}
+
+kapt {
+    generateStubs = true
+}
+
+ext {
+    glide_version = '4.3.1'
+    google_version = '11.8.0'
+    moxy_version = '1.5.3'
+    okhttp_version = '3.9.0'
+    retrofit_version = '2.3.0'
+    room_version = '1.0.0'
+    support_version = '27.0.2'
+    toothpick_version = '1.1.1'
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    // Android and Google stuff
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:cardview-v7:$support_version"
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.google.android.gms:play-services-base:$google_version"
+    implementation "com.google.android.gms:play-services-location:$google_version"
+    implementation "com.google.firebase:firebase-messaging:$google_version"
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
+
+    // ActionCable stuff
+    implementation 'com.github.hosopy:actioncable-client-java:0.1.2'
+
+    // UI stuff
+    implementation 'com.github.takusemba:multisnaprecyclerview:1.1.1'
+    implementation 'com.myhexaville:smart-image-picker:1.0'
+    implementation 'com.redmadrobot:inputmask:2.3.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+    implementation 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+
+    // Mapbox for maps
+    implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:5.2.1@aar') {
+        transitive = true
+    }
+
+    // Moxy for MVP
+    implementation "com.arello-mobile:moxy:$moxy_version"
+    implementation "com.arello-mobile:moxy-app-compat:$moxy_version"
+
+    // OkHttp
+    implementation "com.squareup.okhttp3:okhttp:$moxy_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    // Room for persistence
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    implementation "android.arch.persistence.room:rxjava2:$room_version"
+
+    // Rx for love
+    implementation 'com.cantrowitz:rxbroadcast:2.0.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-kotlin:2.0.0'
+    implementation 'com.jakewharton.rxrelay2:rxrelay:2.0.0'
+    implementation 'com.patloew.rxlocation:rxlocation:1.0.4'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.1.0'
+
+    // Timber for logging
+    implementation 'com.jakewharton.timber:timber:4.6.0'
+
+    // Toothpick for DI
+    implementation "com.github.stephanenicolas.toothpick:toothpick-runtime:$toothpick_version"
+    implementation "com.github.stephanenicolas.toothpick:smoothie:$toothpick_version"
+
+    // Cicerone for navigation
+    implementation 'ru.terrakok.cicerone:cicerone:2.1.0'
+
+    // Shit for crash handling
+    implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+        transitive = true
+    }
+
+    // Shit for annotation processing
+    kapt "android.arch.persistence.room:compiler:$room_version"
+    kapt "com.arello-mobile:moxy-compiler:$moxy_version"
+    kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:$toothpick_version"
+
+    // Shit for tests
+    testImplementation 'junit:junit:4.12'
+
+    // Shit for android tests
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

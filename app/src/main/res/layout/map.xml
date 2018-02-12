@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mapbox.mapboxsdk.maps.MapView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mv_mapbox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:mapbox_cameraZoom="11"
+    app:mapbox_styleUrl="mapbox://styles/eskartaxi/cjb72mk3935dl2rqaeuiocjbd"
+    app:mapbox_uiAttributionGravity="top|center_horizontal"
+    app:mapbox_uiAttributionMarginLeft="52dp"
+    app:mapbox_uiAttributionMarginTop="24dp"
+    app:mapbox_uiLogoGravity="top|center_horizontal"
+    app:mapbox_uiLogoMarginRight="14dp"
+    app:mapbox_uiLogoMarginTop="24dp"
+    app:mapbox_uiRotateGestures="false"
+    app:mapbox_uiTiltGestures="false" />

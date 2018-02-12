@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_appbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_summary_price"
+        android:theme="@style/AppTheme.TextView.Header" />
+
+    <TextView
+        android:id="@+id/tv_order_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:theme="@style/AppTheme.TextView.Clickable.Item" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_payment_method"
+        android:theme="@style/AppTheme.TextView.Header" />
+
+    <TextView
+        android:id="@+id/tv_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:theme="@style/AppTheme.TextView.Clickable.Item" />
+
+    <TextView
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_continue"
+        android:textSize="24sp"
+        android:theme="@style/AppTheme.TextView.Clickable.Button.Inversed"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/btn_payment_pos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_payment_pos"
+        android:textSize="24sp"
+        android:theme="@style/AppTheme.TextView.Clickable.Button.Inversed"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/btn_payment_neg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_payment_neg"
+        android:textSize="24sp"
+        android:theme="@style/AppTheme.TextView.Clickable.Button"
+        android:visibility="gone"/>
+
+</LinearLayout>

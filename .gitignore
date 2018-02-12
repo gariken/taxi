@@ -1,0 +1,12 @@
+.gradle
+.idea
+
+app/release
+build/
+certs/
+
+google-services.json
+gradle.properties
+
+*.apk
+*.iml

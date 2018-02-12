@@ -1,0 +1,26 @@
+package taxi.eskar.eskartaxi.ui
+
+object Results {
+    const val PROFILE_EDIT_SAVED_PASSENGER = 11
+    const val PROFILE_EDIT_SAVED_DRIVER = 12
+
+    const val ADDRESS_TYPING_FAVORITED = 21
+    const val ADDRESS_TYPING_SELECT_ON_MAP = 22
+    const val ADDRESS_TYPING_SELECT_ON_MAP_FROM = 23
+    const val ADDRESS_TYPING_SELECT_ON_MAP_TO = 24
+
+
+    const val START_PASSENGER_ADDRESS_TYPING = 31
+
+    const val ORDER_DETAILS_ADDRESS_TYPING_FROM = 41
+    const val ORDER_DETAILS_ADDRESS_TYPING_TO = 42
+    const val ORDER_DETAILS_COMMENTS = 43
+    const val ORDER_DETAILS_ORDER_PROGRESS = 44
+
+    const val FAVORITED_ADDRESS_TYPING_OTHERS = 51
+    const val FAVORITED_ADDRESS_TYPING_HOME = 52
+    const val FAVORITED_ADDRESS_TYPING_WORK = 53
+
+    const val REQUEST_CODE_PHOTO = 61
+    const val REQUEST_CODE_LICENSE = 62
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/layout_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:id="@+id/tv_header_reg_passenger_name_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_header_reg_passanger_name_first"
+            android:theme="@style/AppTheme.TextView.Header"/>
+
+        <EditText
+            android:id="@+id/et_reg_passenger_name_first"
+            style="@style/AppTheme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/et_reg_passenger_first_hint"
+            android:inputType="textPersonName|textCapWords"/>
+
+        <TextView
+            android:id="@+id/tv_header_reg_passenger_name_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_header_reg_passanger_name_last"
+            android:theme="@style/AppTheme.TextView.Header"/>
+
+        <EditText
+            android:id="@+id/et_reg_passenger_name_last"
+            style="@style/AppTheme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/et_reg_passenger_last_hint"
+            android:inputType="textPersonName|textCapWords"/>
+
+        <TextView
+            android:id="@+id/tv_header_reg_passenger_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_header_reg_passenger_gender"
+            android:theme="@style/AppTheme.TextView.Header"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_header_reg_passenger_upload_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_header_reg_passenger_upload_photo"
+            android:theme="@style/AppTheme.TextView.Header"/>
+
+        <TextView
+            android:id="@+id/btn_reg_passenger_upload_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_reg_passenger_upload_photo"
+            android:theme="@style/AppTheme.TextView.Clickable.Button"/>
+
+        <TextView
+            android:id="@+id/btn_reg_passenger_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_reg_passenger_save"
+            android:theme="@style/AppTheme.TextView.Clickable.Button"/>
+
+    </LinearLayout>
+
+</ScrollView>
